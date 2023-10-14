@@ -59,7 +59,7 @@ nav {
 .hero-info {
     flex: 1;
     padding: 2rem;
-    max-width: 50%;
+    width: 50%;
 }
 
 .hero-info h3 {
@@ -119,15 +119,28 @@ nav {
     border-radius: 5px;
 }
 
-@media (min-width: 768px) {
+
+
+@media (max-width: 1024px) {
     .blog-con {
         grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction:column;
     }
-}
-
-@media (min-width: 1024px) {
-    .blog-con {
-        grid-template-columns: 1fr 1fr 1fr;
+    .blog-item {
+       text-align:  center;
+    }
+    .blog-title{
+        text-align: center;
+    }
+    .hero-con{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-info {
+        width: 100%;
     }
 }
 
